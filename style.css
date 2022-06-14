@@ -1,0 +1,170 @@
+body{
+  margin: 0;
+  display: grid;
+  grid-template-areas: 
+    "header"
+    "ul"
+    "main"
+    "footer";
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  grid-template-rows: 24px 100px 1fr 300px;
+  background: url('./casal-idosos.jpg');
+  background-size:cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+header{
+  grid-area: header;
+  background-color: rgb(100, 32, 32);
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 8rem;
+  color: white;
+  flex-flow: column row;
+  height: 40px;
+}
+
+ul{
+  grid-area: ul;
+  background-color: white;
+  display: flex;
+  gap: 2rem;
+}
+
+li {
+  padding-top: 35px;
+  list-style-type: none;
+  align-items: center;
+}
+
+a{
+  text-decoration: none;
+  padding: 0;
+  color:rgb(100, 32, 32);
+  font-family: "Nanum Gothic", Sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+a:hover{
+  color:rgb(192, 90, 90);
+}
+
+main{
+  grid-area: main;
+  margin: 0 200px;
+}
+
+footer{
+  grid-area: footer;
+  display: flex;
+  text-align: center;
+  background-color: rgb(100, 32, 32);
+  color: white;
+} 
+
+h1{
+  color: white;
+  font-size: 40px;
+  font-weight: 200;
+  line-height: 1.2em;
+  text-align: center;
+}
+
+h1, footer, .name, .title-heading6{
+  font-family: 'EB Garamond', serif;
+}
+
+.button-up{
+  margin-left: 1300px;
+  position: fixed;
+  bottom: 10px;
+}
+
+.fa-arrow-up{
+  font-size: 50px;
+  color: rgba(5, 5, 5, 0.534);
+}
+
+.ul-footer{
+  margin-left: auto;
+  background-color: rgb(100, 32, 32);
+  align-items: center;
+}
+
+.div-footer{
+  display: flex;
+  margin: 0 150px;
+}
+
+.button-container{
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.whatsapp-button{
+  bottom: 15px;
+  background: rgb(58, 214, 58);
+  border-radius: 25px;
+  height: 50px;
+  width: 250px;
+  border: none;
+  margin-left: 350px;
+}
+
+.wabuttontext{
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+}
+
+.icon-button-wa{
+  color: white;
+}
+
+.logo{
+  width: 120px;
+}
+
+.logo-footer{
+  font-size: 1000px;
+}
+
+.name{
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  line-height: 0;
+}
+
+.title-heading6{
+  text-align: center;
+  font-size: 30px;
+  color:white;
+}
+
+.text-heading1{
+  width: 100%;
+  text-align: center;
+  justify-items: center;
+}
+
+.phone{
+  margin-left: 225px;
+}
+
+.phone-link, .email-link{
+  color:white;
+}
