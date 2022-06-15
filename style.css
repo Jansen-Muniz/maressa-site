@@ -1,7 +1,7 @@
 body{
   margin: 0;
   display: grid;
-  grid-template-areas: 
+  grid-template-areas:
     "header"
     "ul"
     "main"
@@ -29,9 +29,8 @@ header{
   display: flex;
   align-items: center;
   justify-content: left;
-  gap: 8rem;
+  gap: 2rem;
   color: white;
-  flex-flow: column row;
   height: 40px;
 }
 
@@ -39,13 +38,14 @@ ul{
   grid-area: ul;
   background-color: white;
   display: flex;
-  gap: 2rem;
+  gap: 4rem;
 }
 
 li {
   padding-top: 35px;
   list-style-type: none;
   align-items: center;
+  gap: .8rem;
 }
 
 a{
@@ -68,11 +68,13 @@ main{
 
 footer{
   grid-area: footer;
+  margin-top: auto;
   display: flex;
-  text-align: center;
+  align-items: center;
+  justify-content: center;
   background-color: rgb(100, 32, 32);
   color: white;
-} 
+}
 
 h1{
   color: white;
@@ -82,8 +84,15 @@ h1{
   text-align: center;
 }
 
+
 h1, footer, .name, .title-heading6{
   font-family: 'EB Garamond', serif;
+}
+
+h2{
+  font-family: 'EB Garamond', serif;
+  font-size: 40px;
+  font-weight: lighter;
 }
 
 .button-up{
@@ -97,15 +106,14 @@ h1, footer, .name, .title-heading6{
   color: rgba(5, 5, 5, 0.534);
 }
 
-.ul-footer{
-  margin-left: auto;
-  background-color: rgb(100, 32, 32);
-  align-items: center;
+.nav-footer{
+  display: inline-block;
+  text-align: center;
 }
 
-.div-footer{
-  display: flex;
-  margin: 0 150px;
+.ul-footer{
+  background-color: rgb(100, 32, 32);
+  justify-content: center;
 }
 
 .button-container{
@@ -115,7 +123,6 @@ h1, footer, .name, .title-heading6{
 }
 
 .whatsapp-button{
-  bottom: 15px;
   background: rgb(58, 214, 58);
   border-radius: 25px;
   height: 50px;
@@ -136,10 +143,12 @@ h1, footer, .name, .title-heading6{
 
 .logo{
   width: 120px;
+  margin-left: 148px;
+  margin-right: 20px;
 }
 
 .logo-footer{
-  font-size: 1000px;
+  width: 350px;
 }
 
 .name{
