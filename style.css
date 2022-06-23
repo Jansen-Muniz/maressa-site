@@ -76,6 +76,20 @@ footer{
   color: white;
 }
 
+button:hover{
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+
+h2, .o-que-faremos-texto{
+  font-family: 'EB Garamond', serif;
+}
+
+h2{
+  font-size: 30px;
+  font-weight: bold;
+}
+
 .quem-somos, .services{
   margin-top: auto;
   align-items: center;
@@ -98,13 +112,13 @@ footer{
 
 .div-aposentadoria-beneficios{
   display: flex;
+  padding: 12px;
 }
 
 .aposentadoria-list, .beneficios-list{
   text-align: center;
   justify-content: center;
   justify-items: center;
-  line-height: none;
   margin-top: 2px;
 }
 
@@ -116,8 +130,85 @@ footer{
 .aposentadoria, .beneficios{
   border: 1px solid rgb(100, 32, 32);
   width: 350px;
-  height: 520px;
+  height: 500px;
   padding: 20px;
+}
+
+.aposentadoria-li, .beneficios-li{
+  padding: 5px;
+  font-size: 18px;
+}
+
+.imagem-aposentadoria, .imagem-beneficios{
+  width: 100px;
+  padding-bottom: 30px;
+}
+
+.fa-arrow-down{
+  font-size: 50px;
+  color: rgb(100, 32, 32);
+  margin-top: auto;
+}
+
+.container{
+  width: auto;
+}
+
+.container-consultoria-planejamento, .container-beneficios-revisao{
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+}
+
+.container-beneficios-revisao{
+  margin-top: 11px;
+}
+
+.consultoria-previdenciaria{
+  background: url('./imagem-1.png');
+  background-position: center center;
+  background-size:cover;
+  width: 450px;
+  color:white;
+}
+
+.planejamento-previdenciario{
+  background: url('./imagem-2.jpeg');
+  background-position: center center;
+  background-size:cover;
+  color:white;
+  width: 450px;
+  margin:auto;
+}
+
+.revisao-beneficios{
+  background: url('./imagem-3.jpeg');
+  background-position: center center;
+  background-size:cover;
+  color:white;
+  width: 450px;
+}
+
+.revisao-vida-toda{
+  background: url('./imagem-5.jpeg');
+  background-position: center center;
+  background-size:cover;
+  color:white;
+  width: 450px;
+  margin:auto;
+}
+
+.mandado-de-seguranca{
+  background: url('./imagem-4.jpeg');
+  background-position: center center;
+  background-size: cover; 
+  background-repeat: no-repeat;
+  color:white; 
+  padding: 15px;
+  margin-top: 12px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 5px;
 }
 
 .services-title{
@@ -126,7 +217,7 @@ footer{
 
 .subtexto-services{
   color: rgb(129, 118, 118);
-  font-size: medium;
+  font-size: large;
 }
 
 h1{
@@ -141,7 +232,15 @@ h1, footer, .name, .title-heading6, .aposentadoria-title, .beneficios-title, .se
   font-family: 'EB Garamond', serif;
 }
 
-.quem-somos-title, .aposentadoria-title, .beneficios-title, .services-title, .contato-title{
+.quem-somos-title, .aposentadoria-title, .beneficios-title, .services-title{
+  font-family: 'EB Garamond', serif;
+  font-size: 40px;
+  font-weight: lighter;
+  color: rgb(100, 32, 32);
+}
+
+.contato-title{
+  color: white;
   font-family: 'EB Garamond', serif;
   font-size: 40px;
   font-weight: lighter;
@@ -149,6 +248,7 @@ h1, footer, .name, .title-heading6, .aposentadoria-title, .beneficios-title, .se
 
 .quem-somos-text{
   font-size: 30px;
+  line-height: 4rem;
 }
 
 .button-up{
@@ -159,7 +259,7 @@ h1, footer, .name, .title-heading6, .aposentadoria-title, .beneficios-title, .se
 
 .fa-arrow-up{
   font-size: 50px;
-  color: rgba(5, 5, 5, 0.534);
+  color: rgba(5, 5, 5, 0.904);
 }
 
 .nav-footer{
@@ -172,10 +272,48 @@ h1, footer, .name, .title-heading6, .aposentadoria-title, .beneficios-title, .se
   justify-content: center;
 }
 
-.button-container{
+.o-que-faremos-texto{
+  font-size: 30px;
+  margin-top: auto;
+  color:rgb(100, 32, 32);
+}
+
+.button-container, 
+.button-container-consulta, 
+.button-container-planejamento,
+.button-container-sobre-revisao,
+.button-container-revisao-vida-toda,
+.button-container-processo{
   justify-content: center;
   align-items: center;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
+}
+
+.whatsapp-button-consulta, 
+.whatsapp-button-sobre-revisao,
+.whatsapp-button-processo{
+  background: rgb(58, 214, 58);
+  border-radius: 25px;
+  height: 50px;
+  width: 300px;
+  border: none;
+  cursor: pointer;
+}
+
+.whatsapp-button-planejamento{
+  background: rgb(58, 214, 58);
+  border-radius: 25px;
+  height: 50px;
+  width: 400px;
+  border: none;
+}
+
+.whatsapp-button-revisao-vida-toda{
+  background: rgb(58, 214, 58);
+  border-radius: 25px;
+  height: 50px;
+  width: 380px;
+  border: none;
 }
 
 .whatsapp-button{
@@ -189,6 +327,12 @@ h1, footer, .name, .title-heading6, .aposentadoria-title, .beneficios-title, .se
 
 .wabuttontext{
   color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+}
+
+.wabuttontext-revisao{
+  font-size: 10px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 800;
 }
@@ -211,7 +355,6 @@ h1, footer, .name, .title-heading6, .aposentadoria-title, .beneficios-title, .se
   font-size: 50px;
   color: white;
   text-align: center;
-  line-height: 0;
 }
 
 .title-heading6{
