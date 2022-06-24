@@ -64,6 +64,8 @@ a:hover{
 main{
   grid-area: main;
   margin: 0 200px;
+  justify-items: center;
+  text-align: center;
 }
 
 footer{
@@ -113,6 +115,9 @@ h2{
 .div-aposentadoria-beneficios{
   display: flex;
   padding: 12px;
+  justify-content: center;
+  margin-left: 0;
+  margin-right: 40px;
 }
 
 .aposentadoria-list, .beneficios-list{
@@ -150,18 +155,15 @@ h2{
   margin-top: auto;
 }
 
-.container{
-  width: auto;
-}
-
-.container-consultoria-planejamento, .container-beneficios-revisao{
+.container1, .container2, .container3{
   display: flex;
-  flex-direction: row;
-  margin-left: 10px;
+  gap: 10px;
+  justify-content: center;
+  flex-direction: row; 
 }
 
-.container-beneficios-revisao{
-  margin-top: 11px;
+.container2{
+  margin-top: 10px;
 }
 
 .consultoria-previdenciaria{
@@ -178,7 +180,6 @@ h2{
   background-size:cover;
   color:white;
   width: 450px;
-  margin:auto;
 }
 
 .revisao-beneficios{
@@ -195,7 +196,6 @@ h2{
   background-size:cover;
   color:white;
   width: 450px;
-  margin:auto;
 }
 
 .mandado-de-seguranca{
@@ -209,6 +209,7 @@ h2{
   margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 5px;
+  width: 880px;
 }
 
 .services-title{
@@ -251,10 +252,14 @@ h1, footer, .name, .title-heading6, .aposentadoria-title, .beneficios-title, .se
   line-height: 4rem;
 }
 
+.div-button-up{
+  align-items: right;
+}
+
 .button-up{
-  margin-left: 1300px;
   position: fixed;
-  bottom: 10px;
+  bottom: 0;
+  right: 20px;
 }
 
 .fa-arrow-up{
@@ -322,7 +327,6 @@ h1, footer, .name, .title-heading6, .aposentadoria-title, .beneficios-title, .se
   height: 50px;
   width: 250px;
   border: none;
-  margin-left: 350px;
 }
 
 .wabuttontext{
